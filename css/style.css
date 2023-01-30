@@ -53,10 +53,8 @@
 }
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= End Navigation =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Start Banner =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
-
-
 .site-main .site-banner{
-    background: url(../img/home-banner.png) no-repeat 0% 50%;
+    background: url(../img/home-banner.png) no-repeat;
     position: relative;
     animation: slide-left .6s;
 }
