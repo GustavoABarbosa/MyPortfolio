@@ -1,0 +1,11 @@
+:root{
+    --gradient-color: linear-gradient(90deg, #4c00ff 0%, #329afc 100%);
+    --button-color: linear-gradient(45deg, #4c00ff 0%, #329afc 40%);
+    --second-btn-color: linear-gradient(45deg, #814dfc 0%, #55adff 100%);
+    --gradient-exp-color:  linear-gradient(90deg, #4f58d854 35%, #329afc8e 65%);
+    --rubik: 'Rubik' , cursive;
+    --title-color: #c0c0c0;
+    --shadow-color: 0px 0px 10px rgba(50, 132, 255, 0.562);
+    --text-color: #777777;
+    --border-color: #201F1F17;
+}

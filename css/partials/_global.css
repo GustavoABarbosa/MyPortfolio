@@ -1,0 +1,40 @@
+
+.title-text{
+    font: normal bold 50px/35px var(--rubik);
+}
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Start Buttons =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+.button{
+    padding: .8rem 2.2rem;
+    font: normal 500 16px/20px var(--rubik);
+    position: relative;
+    border-radius: 20px;    
+    background: #329afc var(--gradient-color);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    color: white;
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 20px 2px;
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
+    transition: all .6s ease;
+}
+.button:hover{    
+    background: #329afc;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 10px );
+    color: white;
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 20px 2px;
+    border: 2px solid rgb(255, 255, 255);
+}
+.button::after{
+    position: absolute;
+    top: -2px; left: -2px; bottom: -2px; right: -2px;
+    background-color: var(--gradient-color);
+    content: '';
+    z-index: -1;
+}
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= End Buttons =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+p.parag{
+    color: var(--text-color);
+    font: normal 500 16px/25px var(--rubik)
+}

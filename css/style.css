@@ -1,0 +1,314 @@
+/* import fonts */
+@import url(fonts.css);
+
+/* import css variables */
+@import url(./partials/_variables.css);
+
+/* import css global */
+@import url(./partials/_global.css);
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Start Navigation =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* Navbar logo \/ */
+
+.header_area .main-menu .navbar .navbar-brand{
+    margin: 0 5% 0 10%;
+    border-radius: 10px;
+}
+/* Navbar menu \/ */
+.header_area .main-menu .navbar .navbar-collapse{
+    padding: 0 5% 0 0;
+}
+/* Navbar menu fonte \/ */
+.header_area .main-menu .nav-item .nav-link{
+    height: 100%;
+    border-radius: 6px;
+    font-family: var(--rubik);
+    font-style:normal;
+    font-weight: 200;
+    text-transform: uppercase;
+    padding: 1rem;
+    color: var(--title-color);
+    transition: all .3s;
+}
+.nav-logo{
+    margin-top: -.4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+/* Navbar menu Active \/ */
+.header_area .main-menu .navbar .active{
+    background:  #329afc;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #FFFFFF;
+    background-clip: text;
+}
+/* Navbar menu Mouse sobre \/ */
+
+.header_area .main-menu .navbar a:hover{
+    color: #329afc;
+    background-clip: text;
+}
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= End Navigation =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Start Banner =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+
+.site-main .site-banner{
+    background: url(../img/home-banner.png) no-repeat 0% 50%;
+    position: relative;
+    animation: slide-left .6s;
+}
+
+
+.site-main .site-banner .site-title h3{
+    padding-top: 35%;
+    font-weight: 500;
+}
+.site-main .site-banner .site-title h3::after{
+    content: "";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+.site-main .site-banner .site-title h1{
+    font-size: 3rem;
+    
+}
+.site-main .site-banner .site-title > h4{
+    font-size: 1.5rem;
+}
+.site-main .site-banner .banner-image > img{
+    padding: 7rem 0;
+    margin-left: 3rem;
+}
+@keyframes slide-left {
+    from {left: -120rem}
+    to {left: 0}
+}
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= End Banner =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Start About Area =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+.site-main .about-area{
+    padding: 8rem 2rem;
+    position: relative;
+    animation: slide-right 1.6s;
+}
+.site-main .about-area .about-img{
+    margin-left: 15%;
+}
+.site-main .about-area .about-title h2 > span{
+    display: block;
+    font: normal bold 49px/60px var(--rubik);
+}
+.site-main .about-area .about-title .paragraph .parag{
+    padding: .4rem 0;
+}
+@keyframes slide-right {
+    from {left: 120rem}
+    to {left: 0}
+}
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= End About Area =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Start Brand Area =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+.container-fluid{
+    display: flex;
+    justify-content: center;
+}
+.center-text{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.site-main .brand-area{
+    padding: 4rem 0rem 2rem 0;
+    margin-bottom: 4rem;
+    background: url(../img/home-banner.png) no-repeat 0% 50%;
+}
+.title-text{
+    margin-bottom: 1.5rem;
+}
+.site-main .brand-area .first-row{
+    display: flex;
+    justify-content: center;
+}
+.site-main .brand-area .first-row .col-lg-4{
+    display: flex;
+    justify-content: center;
+}
+.site-main .brand-area .first-row .col-lg-4 > .languages{
+    text-align: center;
+    padding: 1.8rem .9rem;
+    margin: .9rem 0;
+    width: 100%;
+    height: 80%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    transition: transform .4s ease;
+}
+.site-main .brand-area .first-row .col-sm-6 > .languages{
+    min-width: 5rem;
+    min-height: 5rem;
+}
+.site-main .brand-area .first-row .col-sm-6 .languages > img{
+    max-width: 120px;
+    max-height: 120px;
+}
+#study{
+    display: flex;
+    flex-direction: column;    
+}
+.site-main .brand-area .first-row .col-lg-4 .languages > img{
+    width: 65%;
+    min-width: 70px;
+    min-height: 70px;
+
+}
+
+.site-main .brand-area .first-row .col-lg-4 > .languages:hover{
+    box-shadow: var(--shadow-color);
+    transform: scale(1.05);
+    
+}
+.site-main .brand-area .contact-area{
+    background: var(--gradient-color) ;
+    backdrop-filter: blur( 5px );
+    border-radius: 16px;
+    border: 1px solid rgba(50, 132, 255, 0.562);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-size: cover;
+    transition: all .5s ease;
+}
+.site-main .brand-area .contact-area:hover{
+    box-shadow: 0px 0px 25px rgb(25, 117, 255);
+    transform: scale(1.03);
+    transition: all .5s ease;
+
+}
+
+.site-main .brand-area .col-sm-6 .contact-area {
+    min-width: 17rem;
+    min-height: 25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.site-main .brand-area .contact-area .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.site-main .brand-area .contact-area .contact .contact-10 {
+
+    font: normal bold 42px/10px var(--rubik);
+    color: #FFFFFF;
+}
+.site-main .brand-area .contact-area .contact .contacts {
+    display: flex;
+    flex-direction: column;
+    
+}
+#perfil{
+    background-image: url(../img/Foto_perfil.png);
+    background-size: cover;
+    width: 12rem;
+    height: 12rem;
+    border: solid 2.5px #FFFFFF;
+    border-radius: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    
+    
+}
+.site-main .brand-area .contact-area .call-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= End Brand Area =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Start Projects Area =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+.projects-list{
+    font-family: var(--rubik);
+    font-style:normal;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    transition: all .5s ease;
+}
+.card-projects{
+    display: flex;
+    justify-content: center;
+}
+.card-img-top{
+    width: 100%;
+    height: 100%;
+    padding-top: 10%;
+    border-radius: 20px;
+}
+.card .card-body .card-btn{
+    width: 100%;
+}
+.card{
+    margin: .5rem;
+    transition: all .5s ease;
+    display: flex;
+    align-items: center;
+}
+.card:hover{    
+    box-shadow: var(--shadow-color);
+    transform: scale(1.03);
+
+}
+#card-soon-img{
+    width: 14rem;
+    height: 13rem;
+}
+#linkedin_btn{
+    margin-top: 3rem;
+}
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= End Projects Area =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= Start Footer Area =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+.footer-area{
+    margin-top: 5rem;
+    background: url(../img/home-banner.png) no-repeat 0% 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-logo{
+    margin: 2rem 0 1rem;
+    background-image: url(../img/Foto_perfil.png);
+    background-size: cover;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;    
+}
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= End Footer Area =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+
+.font-rubik{
+    font-family: var(--rubik);
+    font-size: 17px;
+
+}
